@@ -2,11 +2,13 @@
 
 ## Synopsis
 
-At the top of the file there should be a short introduction and/ or overview that explains **what** the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
+According to the Food and Agriculture Organization of the United Nations, almost one-third of the food produced for human consumption is wasted every year!
+
+This waste is a tremendous missed opportunity for improving food security and simultaneously minimizing environmental impacts, such as air pollution, landscape degradation, water use, biodiversity loss, and deforestation.
+
+Employing life cycle analyses (LCAs) to evaluate all stages in the production and consumption of food, including raw material growth or production, processing, distribution, use, and disposal, can facilitate integration of environmental impact assessment in decision-making.
 
 ## Motivation
-
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
 
 ## API Reference
 
@@ -15,8 +17,11 @@ URL API Rest: #
 ## Contributors
 
 Aruro Sánchez
+
 Diego Barranco
+
 Luisma Gonzalez
+
 José J. Peleato Pradel
 
 ## License
