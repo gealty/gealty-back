@@ -45,7 +45,13 @@
 						<phase>package</phase>
 						<goals>
 							<goal>deploy</goal>
+							
 						</goals>
+						<configuration>
+							<hostname>10.10.11.64</hostname>
+							<username>admin</username>
+							<password>qwerty</password>
+						</configuration>
 					</execution>
 				</executions>
 			</plugin>
