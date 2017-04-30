@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 30-abr-2017 2:27:16 by Hibernate Tools 5.2.1.Final -->
+<hibernate-mapping>
+    <class name="es.gealty.bean.Location" table="location" catalog="gealty" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="seed" class="es.gealty.bean.Seed" fetch="select">
+            <column name="id_seed" />
+        </many-to-one>
+        <property name="longitude" type="string">
+            <column name="longitude" length="40" />
+        </property>
+        <property name="latitude" type="string">
+            <column name="latitude" length="40" />
+        </property>
+        <property name="dateInsert" type="timestamp">
+            <column name="date_insert" length="19" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
