@@ -12,6 +12,7 @@ import es.gealty.dao.SeedDAO;
 import es.gealty.dao.SeedHome;
 import es.gealty.service.entities.CheckPlaceRequest;
 import es.gealty.service.entities.CheckPlaceResponse;
+import es.gealty.trade.WeatherTrade;
 
 @Path("CheckPlace")
 public class CheckPlaceService {
@@ -21,6 +22,10 @@ public class CheckPlaceService {
 	@Produces("application/json")
 	public CheckPlaceResponse checkPlace(CheckPlaceRequest request) throws SQLException {
 		CheckPlaceResponse response = new CheckPlaceResponse();
+		
+		WeatherTrade weatherTrade = new WeatherTrade();
+		
+		response.setWeather(weatherTrade.getCurrentWeather(request.getLon(), request.getLat()));
 //		Seed seed = new Seed();
 //		seed.setId(132);
 		

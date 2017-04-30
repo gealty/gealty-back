@@ -2,40 +2,40 @@ package es.gealty.service.entities;
 
 public class CheckPlaceRequest {
 	private String seed;
-	private String lat;
-	private String lon;
-	private boolean save;
-
-	public boolean isSave() {
-		return save;
-	}
-
-	public void setSave(boolean save) {
-		this.save = save;
-	}
+	private Double lat;
+	private Double lon;
+	private Boolean save;
 
 	public String getSeed() {
 		return seed;
 	}
 
-	public String getLat() {
+	public void setSeed(String seed) {
+		this.seed = seed;
+	}
+
+	public Double getLat() {
 		return lat;
 	}
 
-	public void setLat(String lat) {
+	public void setLat(Double lat) {
 		this.lat = lat;
 	}
 
-	public String getLon() {
+	public Double getLon() {
 		return lon;
 	}
 
-	public void setLon(String lon) {
+	public void setLon(Double lon) {
 		this.lon = lon;
 	}
 
-	public void setSeed(String seed) {
-		this.seed = seed;
+	public Boolean getSave() {
+		return save;
+	}
+
+	public void setSave(Boolean save) {
+		this.save = save;
 	}
 
 }

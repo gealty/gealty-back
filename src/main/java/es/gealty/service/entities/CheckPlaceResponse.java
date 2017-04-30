@@ -1,14 +1,17 @@
 package es.gealty.service.entities;
 
+import es.gealty.bean.Weather;
+
 public class CheckPlaceResponse {
 
-	private String wind;
+	private Weather weather;
 
-	public String getWind() {
-		return wind;
+	public Weather getWeather() {
+		return weather;
 	}
 
-	public void setWind(String wind) {
-		this.wind = wind;
+	public void setWeather(Weather weather) {
+		this.weather = weather;
 	}
+
 }
