@@ -25,7 +25,7 @@ public class CheckPlaceService {
 		
 		WeatherTrade weatherTrade = new WeatherTrade();
 		
-		response.setWeather(weatherTrade.getCurrentWeather(request.getLon(), request.getLat()));
+		response.setWeather(weatherTrade.getCurrentWeather(request.getLng(), request.getLat()));
 //		Seed seed = new Seed();
 //		seed.setId(132);
 		

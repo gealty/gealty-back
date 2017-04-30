@@ -3,7 +3,7 @@ package es.gealty.service.entities;
 public class CheckPlaceRequest {
 	private String seed;
 	private Double lat;
-	private Double lon;
+	private Double lng;
 	private Boolean save;
 
 	public String getSeed() {
@@ -22,12 +22,12 @@ public class CheckPlaceRequest {
 		this.lat = lat;
 	}
 
-	public Double getLon() {
-		return lon;
+	public Double getLng() {
+		return lng;
 	}
 
-	public void setLon(Double lon) {
-		this.lon = lon;
+	public void setLng(Double lng) {
+		this.lng = lng;
 	}
 
 	public Boolean getSave() {
