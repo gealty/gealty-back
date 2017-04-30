@@ -35,7 +35,6 @@ public class WeatherTrade {
 	public Weather getCurrentWeather(double lng, double lat) {
 		String response = callRequest(lng, lat);
 
-		// Provisional log TODO add log4j
 		System.out.println("WEATHER:");
 		System.out.println(response);
 

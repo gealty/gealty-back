@@ -4,6 +4,7 @@ import es.gealty.bean.Weather;
 
 public class CheckPlaceResponse {
 
+	private String result;
 	private Weather weather;
 
 	public Weather getWeather() {
@@ -12,6 +13,14 @@ public class CheckPlaceResponse {
 
 	public void setWeather(Weather weather) {
 		this.weather = weather;
+	}
+
+	public String getResult() {
+		return result;
+	}
+
+	public void setResult(String result) {
+		this.result = result;
 	}
 
 }
